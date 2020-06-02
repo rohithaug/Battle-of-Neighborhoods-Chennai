@@ -19,9 +19,9 @@ Chennai has multiple neighborhoods. The chennaiiq.com website has a dataset whic
 
 There is a total of 105 neighborhoods. But the Latitude and Longitude data obtained are in Degrees Minute Seconds format which needs to be converted to Decimal Degrees Format. The following data are obtained from the Foursquare API, 
 
-•	Venue
-•	Venue Latitude
-•	Venue Longitude
-•	Venue Category data
+*	Venue
+*	Venue Latitude
+*	Venue Longitude
+*	Venue Category data
 
 A total of 1130 venues data have been obtained from Foursquare.
