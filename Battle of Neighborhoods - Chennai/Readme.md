@@ -1,5 +1,5 @@
 <p align="center">
-# The Battle of Neighborhoods - Chennai
+<h1>The Battle of Neighborhoods - Chennai</h1>
 </p>
 
 ## Table of contents
