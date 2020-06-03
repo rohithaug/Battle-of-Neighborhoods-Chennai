@@ -1,8 +1,15 @@
+<p align="center">
 # The Battle of Neighborhoods - Chennai
+</p>
 
 ## Table of contents
 1. [Introduction: Business Problem](#intro)
 2. [Data Requirements](#data)
+3. [Methodology](#methodology)
+4. [Analysis](#analysis)
+5. [Results](#results)
+6. [Discussion](#discussion)
+7. [Conclusion](#conclusion)
 
 ## Introduction: Business Problem <a name="intro"></a>
 
@@ -30,3 +37,11 @@ There is a total of 105 neighborhoods. But the Latitude and Longitude data obtai
 *	Venue Category data
 
 A total of 1130 venues data have been obtained from Foursquare.
+
+## Methodology <a name="methodology"></a>
+
+Now, we have the neighborhoods data of chennai (**105 neighborhoods**). We also have the most popular venues in each neighborhood obtained using Foursquare API. A total of **1130 venues** have been obtained in the whole city and **145 unique categories**. But as seen we have multiple neighborhoods with less than 10 venues returned. In order to create a good analysis let's consider only the **_neighborhoods with more than 10 venues_**.
+
+We can perform one hot encoding on the obtained data set and use it find the **10 most common venue category** in each neighborhood. Then clustering can be performed on the dataset. Here **K - Nearest Neighbor** clustering technique have been used. To find the optimal number of clusters **silhouette score** metric technique is used.
+
+The clusters obtained can be analyzed to find the major type of venue categories in each cluster. This data can be used to suggest business people, suitable locations based on the category.
