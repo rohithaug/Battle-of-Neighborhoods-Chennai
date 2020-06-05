@@ -48,13 +48,13 @@ The clusters obtained can be analyzed to find the major type of venue categories
 Looking into the dataset we found that there were many neighborhoods with less than 10 venues which can be remove before performing the analysis to obtain better results. The following plot shows only the neighborhoods from which 10 or more than 10 venues were obtained. The resultant dataset consists of **37 neighborhoods**. 
 
 <p align="center">
-  <img src="images/1_neighborhood.png">
+  <img src="Battle of Neighborhoods - Chennai/images/1_neighborhood.png">
 </p>
 
 Next, we will perform one hot encoding on the filtered data to obtain the venue categories in each neighborhood. Then group the data by neighborhood and take the mean value of the frequency of occurrence of each category. This is used to obtain the top 10 most common venues in each neighborhood i.e. the 10 venues with the highest mean of frequency of occurrence. The resultant dataset can be used for the clustering algorithm. Here, the K-Nearest Neighbor (KNN) clustering algorithm is used. It is an unsupervised machine learning technique that clusters the given data into K number of clusters. For optimal result we need to select the best value for K. Here, the silhouette score is used to find the best value for K. A range of values from 2 to 10 was considered, KNN clustering was performed on the dataset and the silhouette score was calculated and plotted on a line plot. From the plot we can see that a K value of 8 provides the best score. This K value is used for the K-Means Clustering Technique. The K-Means labels obtained were included in the top neighborhoods dataset for examining the characteristics of each cluster.
 
 <p align="center">
-  <img src="images/2_silhouette_score.png">
+  <img src="Battle of Neighborhoods - Chennai/images/2_silhouette_score.png">
 </p>
 
 ## Results and Discussion <a name="results"></a>
@@ -62,7 +62,7 @@ Next, we will perform one hot encoding on the filtered data to obtain the venue 
 Using the clusters and the top venue categories let’s visualize the top 5 venue category in each Cluster for comparison. 
 
 <p align="center">
-  <img src="images/3_clusters.png">
+  <img src="Battle of Neighborhoods - Chennai/images/3_clusters.png">
 </p>
 
 This plot can be used to suggest valuable information to Business persons. Let's discuss a few examples considering they would like to start the following category of business.
@@ -78,13 +78,13 @@ The neighborhoods 5 has notable number of shopping malls. By using the same proc
 Similarly, based on the requirement suggestions can be provided about the neighborhood that would be best suitable for the business. The following is a map of Chennai with the neighborhood clusters superimposed on top of it. This map can be used to suggest a vast location to start a new business based on the category.
 
 <p align="center">
-  <img src="images/4_cluster_map.png">
+  <img src="Battle of Neighborhoods - Chennai/images/4_cluster_map.png">
 </p>
 
 For example, the highlighted location shown in the below figure consists of Cluster 3 and Cluster 5, whose neighborhoods have many Restaurants and Shopping Malls but less Hotels. Thus, this would be a suitable location for building a hotel.
 
 <p align="center">
-  <img src="images/5_example.png">
+  <img src="Battle of Neighborhoods - Chennai/images/5_example.png">
 </p>
 
 ## Conclusion <a name="conclusion"></a>
