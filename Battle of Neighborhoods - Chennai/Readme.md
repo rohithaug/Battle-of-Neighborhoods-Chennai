@@ -95,6 +95,6 @@ A few examples for the applications that the clusters can be used for have also 
 
 ## Thank you!
 
-I hope you found the project useful and interesting. Feel free to contact me if you have any queries or suggestions.
+I hope you found the project useful and interesting. This project was deveoped for the **Applied Data Science Capstone** as part of the **IBM Data Science Professional Certificate** provided through Coursera. Feel free to contact me if you have any queries or suggestions.
 
 -- [Rohith S P](https://www.linkedin.com/in/rohithsp/)
